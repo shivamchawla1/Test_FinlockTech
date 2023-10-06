@@ -16,6 +16,13 @@ struct CitiesView: View {
             }
         }
         .navigationTitle("Cities")
+        .onAppear{
+            DispatchQueue.global().async {
+                for i in 0..<1000000{
+                    print(i)
+                }
+            }
+        }
     }
 }
 
