@@ -11,7 +11,9 @@ import SwiftUI
 struct Test_FinlockTechApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                SelectCountryView()
+            }
         }
     }
 }

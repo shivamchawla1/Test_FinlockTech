@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1605363D2AD08818009972C9 /* Test_FinlockTechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605363C2AD08818009972C9 /* Test_FinlockTechApp.swift */; };
-		1605363F2AD08818009972C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605363E2AD08818009972C9 /* ContentView.swift */; };
+		1605363F2AD08818009972C9 /* SelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605363E2AD08818009972C9 /* SelectCountryView.swift */; };
 		160536412AD08819009972C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160536402AD08819009972C9 /* Assets.xcassets */; };
 		160536442AD08819009972C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160536432AD08819009972C9 /* Preview Assets.xcassets */; };
+		1605364F2AD08883009972C9 /* CitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605364E2AD08883009972C9 /* CitiesView.swift */; };
+		160536532AD089E0009972C9 /* SelectCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160536522AD089E0009972C9 /* SelectCountryViewModel.swift */; };
+		160536552AD089EF009972C9 /* SelectCountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160536542AD089EF009972C9 /* SelectCountryModel.swift */; };
+		160536582AD08A40009972C9 /* AsyncUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160536572AD08A40009972C9 /* AsyncUtility.swift */; };
+		1605365A2AD08A98009972C9 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160536592AD08A98009972C9 /* ErrorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		160536392AD08818009972C9 /* Test_FinlockTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_FinlockTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1605363C2AD08818009972C9 /* Test_FinlockTechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_FinlockTechApp.swift; sourceTree = "<group>"; };
-		1605363E2AD08818009972C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1605363E2AD08818009972C9 /* SelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryView.swift; sourceTree = "<group>"; };
 		160536402AD08819009972C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160536432AD08819009972C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1605364E2AD08883009972C9 /* CitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesView.swift; sourceTree = "<group>"; };
+		160536522AD089E0009972C9 /* SelectCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryViewModel.swift; sourceTree = "<group>"; };
+		160536542AD089EF009972C9 /* SelectCountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryModel.swift; sourceTree = "<group>"; };
+		160536572AD08A40009972C9 /* AsyncUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncUtility.swift; sourceTree = "<group>"; };
+		160536592AD08A98009972C9 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,12 @@
 		1605363B2AD08818009972C9 /* Test_FinlockTech */ = {
 			isa = PBXGroup;
 			children = (
-				1605363C2AD08818009972C9 /* Test_FinlockTechApp.swift */,
-				1605363E2AD08818009972C9 /* ContentView.swift */,
-				160536402AD08819009972C9 /* Assets.xcassets */,
+				160536512AD088A4009972C9 /* Networking */,
+				1605364A2AD08824009972C9 /* MainApp */,
+				1605364D2AD08869009972C9 /* Model */,
+				1605364B2AD08859009972C9 /* View */,
+				1605364C2AD08861009972C9 /* ViewModel */,
+				160536502AD08892009972C9 /* Assets */,
 				160536422AD08819009972C9 /* Preview Content */,
 			);
 			path = Test_FinlockTech;
@@ -65,6 +78,56 @@
 				160536432AD08819009972C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1605364A2AD08824009972C9 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				1605363C2AD08818009972C9 /* Test_FinlockTechApp.swift */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		1605364B2AD08859009972C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1605363E2AD08818009972C9 /* SelectCountryView.swift */,
+				1605364E2AD08883009972C9 /* CitiesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1605364C2AD08861009972C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				160536522AD089E0009972C9 /* SelectCountryViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1605364D2AD08869009972C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				160536542AD089EF009972C9 /* SelectCountryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		160536502AD08892009972C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				160536402AD08819009972C9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		160536512AD088A4009972C9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				160536572AD08A40009972C9 /* AsyncUtility.swift */,
+				160536592AD08A98009972C9 /* ErrorModel.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1605363F2AD08818009972C9 /* ContentView.swift in Sources */,
+				1605365A2AD08A98009972C9 /* ErrorModel.swift in Sources */,
+				1605363F2AD08818009972C9 /* SelectCountryView.swift in Sources */,
 				1605363D2AD08818009972C9 /* Test_FinlockTechApp.swift in Sources */,
+				1605364F2AD08883009972C9 /* CitiesView.swift in Sources */,
+				160536582AD08A40009972C9 /* AsyncUtility.swift in Sources */,
+				160536532AD089E0009972C9 /* SelectCountryViewModel.swift in Sources */,
+				160536552AD089EF009972C9 /* SelectCountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
